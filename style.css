@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'compass/css3';
+/* Place in your CSS file at the top of the document */
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+* {
+  font-family: 'Rajdhani', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 1200px;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+nav {
+  display: flex;
+  /* position: fixed; */
+  /* background-color: beige; */
+  height: 75px;
+  /* border-bottom: #ffffff solid 1px; */
+  /* background-color: #0000001b; */
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+  /* margin-left: %; */
+  width: 20%;
+  /* margin-right: 15px; */
+  /* padding-left: 3%; */
+  height: 75px;
+}
+.logo img {
+  border-radius: 50%;
+  /* background-color: rgba(0, 0, 0, 0); */
+}
+.logo li {
+  font-size: x-large;
+  font-weight: 800;
+}
+nav a {
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  color: white;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* background-color: aquamarine; */
+  width: 70%;
+
+  list-style: none;
+}
+
+li.list a {
+  /* background-color: rgba(0, 0, 255, 0); */
+  padding: 0 10px;
+  font-weight: 450;
+}
+li.list a:hover {
+  /* background-color: rgba(0, 0, 255, 0.2); */
+  text-shadow: 1px 1px 20px rgba(255, 255, 255, 0.665);
+  /* box-shadow: 1px 1px 1px white; */
+}
+.right {
+  position: relative;
+
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2%;
+}
+.box {
+  position: relative;
+}
+
+.input {
+  padding: 10px;
+  width: 50px;
+  height: 35px;
+  background: none;
+  border: 2px solid rgba(6, 160, 231, 0.805);
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #f2f2f2;
+  outline: none;
+  transition: 0.5s;
+}
+.right:hover input {
+  width: 350px;
+  background: #3b364000;
+  border-radius: 10px;
+}
+.box i {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #f6f6f6ea;
+  transition: 0.2s;
+}
+
+.search {
+  border: none;
+
+  background-color: transparent;
+}
+.menu{
+  display :none;
+  background-color: transparent;
+  font-size: 18px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+}
+@media screen and (max-width: 850px){
+  nav .list {
+    display: none;
+  }
+  .box{
+    display: none;
+  }
+  .logo{
+    margin-left: 12%;
+  }
+  .menu{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 615px){
+  .or{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .second{
+    display: none;
+  }
+  
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.7) url('../2.jpg');
+  background-size: cover;
+  background-blend-mode: darken;
+}
+/* section{
+    background: rgba(0,0,0,0.7) url('../pexels-expect-best-323705.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+} */
+section {
+  margin-top: 5%;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(183, 187, 168); */
+  max-width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.first {
+  /* margin-left: 10%; */
+  width: 50%;
+  margin: 0 5% 0 5%;
+  /* background-color: aquamarine; */
+  margin: auto;
+}
+.second {
+  width: 50%;
+  margin: 0 5% 0 5%;
+  /* background-color: rgb(96, 40, 40); */
+  margin: auto;
+}
+.large {
+  /* background-color: rgb(52, 38, 20); */
+  margin-bottom: 8px;
+  font-size: 45px;
+  font-weight: 800;
+  color: rgba(6, 160, 231, 0.805);
+  text-transform: uppercase;
+}
+.small {
+  /* background-color: rgb(54, 10, 10); */
+  margin-bottom: 8px;
+  font-size: large;
+  color: rgb(159, 159, 159);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.forbutton {
+  /* background-color: blueviolet; */
+  height: auto;
+  text-align: left;
+  /* padding: 5px; */
+  margin: 5px;
+  margin-top: 4%;
+  margin-left: 3px;
+  /* Other styles */
+  overflow-y: auto; /* Add this to enable vertical scrolling when text overflows */
+  max-height: 150px; /* Set a maximum height for the container */
+}
+.or {
+  color: rgba(238, 238, 238, 0.597);
+}
+img.ani {
+  max-width: 100%;
+  margin: auto;
+
+  animation: customAni 4s cubic-bezier(0.85, 0, 0.15, 1) 3s 1 normal none;
+}
+.btn {
+  /* background-color: rgb(183, 187, 168); */
+  width: 100px;
+  height: 35px;
+  border: none;
+  /* border: 1.2px solid rgba(255, 255, 255, 0.937); */
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 5px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.883);
+  cursor: pointer;
+  background-color: rgba(6, 160, 231, 0.805);
+  transition: width 0.5s, height 0.5s;
+}
+.btn:hover {
+  width: 101px;
+  height: 36px;
+  transform: scale(1.05);
+}
+
+@keyframes customAni {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+.h{
+  position: absolute;
+  display: none;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(0, 117, 233);
+  height: 20%;
+  text-align: center;
+}
+.h ul{
+  flex-direction: column;
+  list-style: none;
+  cursor: pointer;
+}
+.h ul li a{
+  text-decoration: none;
+  color: white;
+  
+}
+.h ul li:hover{
+  /* border-bottom: #f2f2f2 1px solid; */
+  background-color: #0000001a;
+}

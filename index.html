@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container background">
+      <nav class="navbar">
+        <ul>
+          <div class="logo">
+            <li>
+              <a href=""
+                ><img
+                  src="best-logo-3-removebg-preview.png"
+                  alt="logo"
+                  width="60px"
+                  height="auto"
+              /></a>
+            </li>
+            <li><a href="">LOGO</a></li>
+          </div>
+          <li class="list"><a href="#">Home</a></li>
+          <li class="list"><a href="#">About</a></li>
+          <li class="list"><a href="#">Services</a></li>
+          <li class="list"><a href="#">Contact</a></li>
+        </ul>
+        <div class="right">
+          <button class="menu"><i class="fa-solid fa-bars"></i></button>
+          <div class="box">
+            <form name="search">
+       
+              <input
+                type="text"
+                class="input"
+                name="txt"
+                onmouseout="this.value = ''; this.blur();"
+              />
+            </form>
+            <i class="fas fa-search"></i>
+          </div>
+          
+        </div>
+      </nav>
+      <div class="h">
+        <ul>
+          <li class="list1"><a href="#">Home</a></li>
+          <li class="list1"><a href="#">About</a></li>
+          <li class="list1"><a href="#">Services</a></li>
+          <li class="list1"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <section class="sample">
+        <div class="main">
+          <div class="first">
+            <p class="large">Random Text Generator</p>
+            <p class="small">
+              First we took many books available on project Gutenberg and stored
+              their contents in a database. Then a computer algorithm takes the
+              words we stored earlier and shuffles them into sentences and
+              paragraphs...
+            </p>
+            <div class="forbutton">
+              <button class="btn">Explore</button>
+              <span class="or">or</span>
+              <button class="btn">Join now</button>
+            </div>
+          </div>
+          <div class="second">
+            <img class="ani"src="AdobeStock_134518160_Preview-removebg-preview.png"alt="" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+ 
+ document.addEventListener('DOMContentLoaded', function() {
+  // Add event listener to the button
+  var h = document.querySelector('.h');
+  // let a=document.querySelector('')
+  var button = document.querySelector('.menu'); // Selecting by class instead of id
+  button.addEventListener('click', function() {
+    // h.style.backgroundColor="red";
+    if(h.style.display=='none'){
+      h.style.display='flex';
+    button.style.color='rgb(0, 117, 233)';
+    }
+    else{
+      h.style.display='none';
+      button.style.color='white';
+    }
+
+  });
+});
+
+
+    </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
